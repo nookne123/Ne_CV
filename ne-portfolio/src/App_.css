@@ -1,0 +1,209 @@
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 , h2 , h3 {
+  margin: 0;
+} 
+
+ nav{
+  display: flex;
+  background-color: #573131;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 0px 12px black;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: fixed;
+  width: 100%;
+ }
+ 
+.logo {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.logo h1 {
+  margin: 0px 0px 0px 40px;
+  font-size: 50px;
+  width: 70px;
+}
+
+.logo h2 {
+  align-self: flex-end;
+  margin: 0;
+}
+
+.menu-list {
+  display: flex;
+  margin: 0px 50px 0px 0px;
+  column-gap: 45px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-list p{
+  color: white;
+}
+
+.field-img-aboutme {
+  width: 45%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.about-me {
+  display: flex;
+  margin: 0 100px 0 100px;
+
+}
+
+.field-text-aboutme {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 55%;
+  margin: auto auto auto auto;
+}
+.field-text-aboutme h1{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 10px 10px 10px black;
+  margin-top: 120px;
+}
+
+.field-text-aboutme h2{
+  color: #C7C7C7;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: 10px 10px 10px black;
+}
+
+.field-text-aboutme h3{
+  color: #D9D9D9;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.field-text-skills{
+  padding: 0 150px 0 150px;
+}
+
+.field-text-skills h1{
+  color: #D9D9D9;
+  font-size: 22px;
+}
+
+.field-text-skills h2{
+  margin-top: 20px;
+  color: #D9D9D9;
+  font-size: 18px;
+}
+
+.field-cards{
+  margin-top: 120px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card{
+  width: 25%;
+  height: 590px;
+  background-color: #D9D9D9;
+  border-radius: 20px; 
+  box-shadow: 10px 10px 10px black;
+}
+
+.card img{
+  margin-top: 50px;
+}
+
+.field-activities{
+  margin: 120px auto auto auto;
+  width: 85%;
+}
+
+.field-activities-section{
+  display: flex;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.field-activities-section img{
+  width: 50%;
+}
+
+.field-activities-section div{
+  width: 50%;
+  margin: auto auto auto auto;
+}
+
+.field-activities-section div div{
+  width: 70%;
+}
+
+.field-activities-section div h1{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.field-activities-section div p{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.field-education div ,.field-contact div{
+  display: flex;
+  gap: 30px;
+  color: white;
+  margin: 20px 50px;
+}
+
+.field-education,.field-contact{
+  color: white;
+  margin: 40px 50px;
+}

@@ -1,0 +1,412 @@
+*{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(46, 46, 46);
+}
+
+p ,h1 ,h2{
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+}
+
+h3 {
+    margin: 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    background-color: rgb(46, 46, 46);
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 12px black;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+}
+
+nav > div > a{
+    margin-right: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav > div > h1{
+    color: white;
+    margin-left: 50px;
+}
+nav > div > h2{
+    margin-left: 3px;
+}
+
+/* about-me */
+.about-me {
+    display: flex;
+    margin: 0 100px 80px 100px;
+    padding-top: 210px;
+    padding-bottom: 170px;
+}
+
+.field-img-aboutme {
+    width: 40%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-img-aboutme:hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+
+.field-text-aboutme {
+    text-align: center;
+    width: 60%;
+}
+
+.field-text-aboutme > div {
+    margin: 50px auto 0 auto;
+    width: 600px;
+}
+
+.field-text-aboutme > div > div{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 70px;
+}
+
+.field-text-aboutme > div > div > a > img {
+    cursor: pointer;
+}
+
+.field-text-aboutme > div > div > a > img:hover {
+    transform:translateY(-15px);
+    transition: ease-in-out;
+    transition-duration: .3s;
+}
+
+.field-text-aboutme > div > p{
+    margin-top: 40px;
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+}
+
+/* services&skills */
+.field-skills{
+    background-color: white;
+    padding: 100px 0;
+}
+
+.field-text-skills {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.field-text-skills > div > *{
+    margin: auto;
+}
+
+.field-text-skills > div > h3,.field-text-skills > div > p {
+    width: 65%;
+    text-align: center;
+    color: black;
+}
+
+.field-text-skills > div > p{
+    margin-top: 50px;
+}
+
+.field-cards{
+    margin: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+  
+.card{
+    width: 22%;
+    height: 600px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 20px; 
+    /* border: 4px solid rgb(71, 227, 255); */
+    /* box-shadow: 10px 10px 10px black; */
+}
+
+.card:hover {
+    transform: scale(1.10);
+    transition-duration: .7s;
+}
+
+.card > div {
+    width: 70%;
+    margin: 60px auto 40px auto;
+    text-align: center;
+}
+
+.card > div > h2 {
+    padding-top: 30px;
+    color: black;
+    font-size: 25px;
+}
+
+.card > div > p {
+    padding-top: 30px;
+    line-height: 1.5;
+    color: black;
+}
+
+/* activities & works */
+
+.field-text-activities {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.field-text-activities > div {
+    text-align: center;
+}
+
+.field-text-activities > div > h3 {
+    color: white;
+}
+
+.field-text-activities > div > p{
+    margin-top: 50px;
+}
+
+.field-slide{
+    margin: 100px auto;
+    width: 1300px;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    scroll-snap-align: start;
+    animation: slide 30s infinite linear;
+}
+
+.wrapper:hover {
+    animation-play-state: paused;
+}
+
+.wrapper > .content {
+    display: flex;
+    gap: 70px;
+}
+
+.content-text {
+    color: white;
+    width: 587px;
+    margin: 20px auto ;
+}
+
+.content-text > p {
+    text-indent: 50px;
+    padding-top: 20px;
+}
+
+@keyframes slide {
+    0%{transform: translateX(0);}
+    10%{transform: translateX(0);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-100%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-400%);}
+    90%{transform: translateX(-400%);}
+    100%{transform: translateX(-400%);}
+}
+
+.field-education div ,.field-contact div{
+    display: flex;
+    gap: 30px;
+    margin: 13px 20px;
+  }
+  
+.field-education,.field-contact{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.field-education {
+    border-right: 1px solid rgb(196, 196, 196);
+    margin-right: 80px;
+}
+
+.field-education > h3,.field-contact > h3 {
+    text-align: start;
+    color: rgb(107, 107, 107);
+    margin-bottom: 25px;
+}
+
+.field-education > div > p,.field-contact > div > p {
+    text-align: start;
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+}
+
+.field-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 25px 150px;
+    border-bottom: 6px solid rgb(46, 46, 46);
+}
+
+.field-education > div > img,.field-contact > div > img {
+    color: rgb(107, 107, 107);
+}
+
+@media only screen and (max-width: 1300px) {
+    #aboutme {
+        display: flex;
+        justify-content: center;
+    }
+    .field-img-aboutme {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .field-text-skills > div > p {
+        width: 80%;
+    }
+    .about-me {
+        display: block;
+        padding-top: 120px;
+    }
+    .wrapper > .content {
+        display: block;
+        gap: 70px;
+    }
+    .field-slide{
+        margin: 100px auto;
+        width: 643px;
+        overflow: hidden;
+    }
+    .card{
+        width: 30%;
+        height: 600px;
+        background-color: rgb(223, 223, 223);
+        border-radius: 20px; 
+        /* border: 4px solid rgb(71, 227, 255); */
+        /* box-shadow: 10px 10px 10px black; */
+    }
+    .field-cards{
+        margin: 70px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .field-footer{
+        display: block;
+    }
+    .field-education {
+        border: none;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    nav > div > a{
+        margin-right: 25px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    nav > div > h1{
+        color: white;
+        margin-left: 10px;
+    }
+    .wrapper:hover {
+        animation-play-state: running;
+    }
+    .field-education,.field-contact{
+        margin: 0 0 ;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .field-img-aboutme > img{
+        width: 300px;
+        height: 300px;
+    }
+    .field-text-aboutme > div > p{
+        width: 550px;
+        margin: 40px auto;
+    }
+    .about-me {
+        display: block;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    .field-img-aboutme {
+        height: 300px;
+    }
+    .field-footer {
+        padding: 25px 30px;
+    }
+    nav > div > a{
+        visibility: hidden;
+    }
+    .field-education,.field-contact{
+        margin: 0 30px ;
+    }
+    .card{
+        width: 32%;
+        height: 680px;
+    }
+    .field-text-skills > div > p {
+        width: 95%;
+    }
+    #aboutme {
+        width: 750px;
+    }
+    #skills {
+        width: 750px;
+    }
+    #activities {
+        width: 750px;
+    }
+    #footer {
+        width: 750px;
+    }
+}
